@@ -4,6 +4,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 
 public class RocketActivity extends ActionBarActivity {
@@ -29,6 +30,7 @@ public class RocketActivity extends ActionBarActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
         if (id == R.id.action_settings) {
+            Toast.makeText(this, R.string.app_name, Toast.LENGTH_LONG).show();
             return true;
         }
         return super.onOptionsItemSelected(item);
